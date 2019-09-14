@@ -144,6 +144,7 @@ body {
 
 .section {
   margin-top: 26px;
+  display: none;
   &__image {
     width: 170px;
     height: 196px;
@@ -157,4 +158,8 @@ body {
     text-transform: uppercase;
     margin-bottom: 29px;
   }
+}
+
+.case--active .section {
+  display: block;
 }

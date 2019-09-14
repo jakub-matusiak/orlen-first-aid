@@ -16,7 +16,14 @@ if ('serviceWorker' in navigator) {
 
 // place your code below
 
+const caseList = document.querySelector('.case-list');
 
-console.log(`Hello world!`);
+caseList.addEventListener('click', (e) => {
+  const button = e.target.id;
+
+  if (e.target.id === (`${button}`)) {
+    e.target.parentNode.classList.toggle('case--active');
+  }
+});
 
 
