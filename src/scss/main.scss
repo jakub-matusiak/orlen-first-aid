@@ -1,6 +1,6 @@
 @import "_normalize";
 @import "_variables";
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext");
 
 html {
   box-sizing: border-box;
@@ -15,7 +15,7 @@ html {
 
 body {
   color: black;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .header {
@@ -96,6 +96,13 @@ body {
   padding: 0;
 }
 
+.case-header {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+}
+
 .case {
   &:not(:last-child) {
     margin-bottom: 1rem;
@@ -144,6 +151,7 @@ body {
 
 .section {
   margin-top: 26px;
+  display: none;
   &__image {
     width: 170px;
     height: 196px;
@@ -157,4 +165,11 @@ body {
     text-transform: uppercase;
     margin-bottom: 29px;
   }
+}
+
+.footer {
+  margin: 100px 0 10px 0;
+  display: block;
+  text-align: center;
+  padding: 0 2px;
 }
