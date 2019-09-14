@@ -97,29 +97,30 @@ body {
 }
 
 .case {
-  cursor: pointer;
-  min-width: 315px;
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  border-radius: 35px;
-  padding: 1rem;
-  padding-left: 3rem;
-  font-size: 18px;
-  text-transform: uppercase;
-  position: relative;
-
   &:not(:last-child) {
     margin-bottom: 1rem;
   }
+  &__button {
+    cursor: pointer;
+    min-width: 315px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 35px;
+    padding: 1rem;
+    padding-left: 3rem;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
 
-  &::before {
-    content: (url("../assets/img/plus-icon.svg"));
-    position: absolute;
-    width: 44px;
-    height: 44px;
-    left: 4px;
-    top: 50%;
-    transform: translateY(-50%);
+    &::before {
+      content: (url("../assets/img/plus-icon.svg"));
+      position: absolute;
+      width: 44px;
+      height: 44px;
+      left: 4px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
 
