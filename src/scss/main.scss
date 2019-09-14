@@ -60,14 +60,27 @@ body {
     font-size: 1.5rem;
     text-transform: uppercase;
     margin: 1rem auto;
-    padding: 1rem 2.5rem;
+    padding: 1rem 2.5rem 1rem 3.5rem;
     width: 20rem;
+    position: relative;
     transition: .3s ease-in-out;
 
     &:hover {
       background: rgba(204, 34, 41, 0.8);
       color: black;
       animation: alarm 1s linear infinite;
+    }
+
+    &::before {
+      position: absolute;
+      left: -2%;
+      top: -12%;
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      content: (url("../assets/img/phoneCall.svg"));
+
+
     }
   }
 }
@@ -113,6 +126,7 @@ body {
     }
   }
 }
+
 
 @keyframes alarm {
   0% {
