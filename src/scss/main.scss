@@ -1,7 +1,6 @@
 @import "_normalize";
 @import "_variables";
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext');
-
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext");
 
 html {
   box-sizing: border-box;
@@ -24,9 +23,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: space-between;
-  background-image: linear-gradient(to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)), url(../assets/img/accident.png);
+  background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.3), rgba($color-primary-dark, 0.3)),
+    url(../assets/img/accident.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 15rem;
@@ -42,7 +40,7 @@ body {
   }
 
   &__title {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 1.5rem;
     text-transform: uppercase;
     margin: 0;
@@ -54,7 +52,7 @@ body {
     justify-content: center;
     background: #fff;
     border-radius: 35px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border: none;
     cursor: pointer;
     font-size: 1.5rem;
@@ -63,7 +61,7 @@ body {
     padding: 1rem 2.5rem 1rem 3.5rem;
     width: 20rem;
     position: relative;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
 
     &:hover {
       background: rgba(204, 34, 41, 0.8);
@@ -79,8 +77,6 @@ body {
       height: 75px;
       border-radius: 50%;
       content: (url("../assets/img/phoneCall.svg"));
-
-
     }
   }
 }
@@ -92,41 +88,40 @@ body {
   align-items: center;
   justify-content: center;
   margin: 1rem;
-
-  &__items {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  &__item {
-    cursor: pointer;
-    min-width: 315px;
-    background: #FFFFFF;
-    border: 1px solid #E5E5E5;
-    border-radius: 35px;
-    padding: 1rem;
-    padding-left: 3rem;
-    font-size: 18px;
-    text-transform: uppercase;
-    position: relative;
-
-    &:not(:last-child) {
-      margin-bottom: 1rem;
-    }
-
-    &::before {
-      content: (url('../assets/img/plus-icon.svg'));
-      position: absolute;
-      width: 44px;
-      height: 44px;
-      left: 4px;
-      top: 50%;
-      transform: translateY(-50%)
-    }
-  }
 }
 
+.case-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.case {
+  cursor: pointer;
+  min-width: 315px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 35px;
+  padding: 1rem;
+  padding-left: 3rem;
+  font-size: 18px;
+  text-transform: uppercase;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &::before {
+    content: (url("../assets/img/plus-icon.svg"));
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
 
 @keyframes alarm {
   0% {
