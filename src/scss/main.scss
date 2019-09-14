@@ -141,3 +141,20 @@ body {
     background: blue;
   }
 }
+
+.section {
+  margin-top: 26px;
+  &__image {
+    width: 170px;
+    height: 196px;
+    margin-bottom: 27px;
+  }
+
+  &__heading {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin-bottom: 29px;
+  }
+}
