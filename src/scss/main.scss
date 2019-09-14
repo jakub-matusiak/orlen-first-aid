@@ -25,13 +25,14 @@ body {
   justify-content: space-between;
   align-items: space-between;
   background-image: linear-gradient(to right bottom,
-  rgba($color-primary-light, 0.8),
-  rgba($color-primary-dark, 0.8)), url(../assets/img/accident.png);
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)), url(../assets/img/accident.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 15rem;
   margin: 0;
   padding: 1rem 0;
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -39,6 +40,7 @@ body {
     margin: 0;
     padding: 0 1rem;
   }
+
   &__title {
     color: #FFFFFF;
     font-size: 1.5rem;
@@ -46,6 +48,7 @@ body {
     margin: 0;
     padding: 0;
   }
+
   &__button {
     display: flex;
     justify-content: center;
@@ -59,6 +62,13 @@ body {
     margin: 1rem auto;
     padding: 1rem 2.5rem;
     width: 20rem;
+    transition: .3s ease-in-out;
+
+    &:hover {
+      background: rgba(204, 34, 41, 0.8);
+      color: black;
+      animation: alarm 1s linear infinite;
+    }
   }
 }
 
@@ -69,11 +79,13 @@ body {
   align-items: center;
   justify-content: center;
   margin: 1rem;
+
   &__items {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
+
   &__item {
     cursor: pointer;
     min-width: 315px;
@@ -85,6 +97,7 @@ body {
     font-size: 18px;
     text-transform: uppercase;
     position: relative;
+
     &:not(:last-child) {
       margin-bottom: 1rem;
     }
@@ -98,5 +111,23 @@ body {
       top: 50%;
       transform: translateY(-50%)
     }
+  }
+}
+
+@keyframes alarm {
+  0% {
+    background: blue;
+  }
+
+  49% {
+    background: red;
+  }
+
+  51% {
+    background: red;
+  }
+
+  100% {
+    background: blue;
   }
 }
