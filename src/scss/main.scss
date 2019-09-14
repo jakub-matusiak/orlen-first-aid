@@ -1,16 +1,92 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext');
 
 
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
+  font-size: 16px;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  color: black;
+  background: #bada55;
+}
+
+.wrapper {
+  max-width: 40rem;
+  width: 100%;
+  margin: 2rem auto;
+  background: white;
+}
+
+.nav {
+  background: rgba(204, 34, 41, 0.5);
+  width: 100%;
+  background-image: linear-gradient(to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)),
+    url(../assets/img/accident.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 15rem;
+  width: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    border-radius: 35px;
+    border: 1px solid #E5E5E5;
+    border: none;
+    cursor: pointer;
+    height: 3.7rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 1rem 1rem 3rem 1rem;
+    width: 20rem;
+  }
+}
+
+.main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__items {
+    list-style-type: none;
+  }
+  &__item {
+    cursor: pointer;
+    min-width: 315px;
+    border: 1px solid #E5E5E5;
+    border-radius: 35px;
+    padding: 22px;
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    &::before {
+      content: (url('../assets/img/plus-icon.svg'));
+      position: absolute;
+      width: 44px;
+      height: 44px;
+      left: 4px;
+      top: 50%;
+      transform: translateY(-50%)
+    }
+  }
 }
