@@ -106,6 +106,7 @@ body {
   &:not(:last-child) {
     margin-bottom: 1rem;
   }
+
   &__button {
     cursor: pointer;
     min-width: 315px;
@@ -121,16 +122,18 @@ body {
     &::before {
       display: block;
       background: url(../assets/img/plus-icon.svg);
-      content:'';
+      content: '';
       position: absolute;
       width: 44px;
       height: 44px;
       left: 4px;
-      top: 4px;;
+      top: 4px;
+      ;
       transition: transform .3s ease;
       overflow: hidden;
       border-radius: 50px;
     }
+
     &--active {
       &::before {
         transform: rotate(135deg);
@@ -163,6 +166,7 @@ body {
 .section {
   margin-top: 26px;
   display: none;
+
   &__image {
     width: 170px;
     height: 196px;
@@ -174,7 +178,32 @@ body {
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
-    margin-bottom: 29px;
+    margin-bottom: 20px;
+    padding: 16px;
+
+  }
+
+  &__description {
+    margin: 0 auto;
+    padding: 16px;
+    max-width: 350px;
+    width: 100%;
+    line-height: 24px;
+  }
+
+
+}
+
+.section-list {
+  margin: 16px auto;
+  padding: 16px;
+  list-style: none;
+  text-align: center;
+
+  &__item {
+    margin: 0 auto;
+    padding: 8px;
+    max-width: 80%;
   }
 }
 
