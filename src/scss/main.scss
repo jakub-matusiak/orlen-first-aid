@@ -66,7 +66,6 @@ body {
     &:hover {
       background: rgba(204, 34, 41, 0.8);
       color: black;
-      animation: alarm 1s linear infinite;
     }
 
     &::before {
@@ -143,26 +142,6 @@ body {
   }
 }
 
-
-
-@keyframes alarm {
-  0% {
-    background: blue;
-  }
-
-  49% {
-    background: red;
-  }
-
-  51% {
-    background: red;
-  }
-
-  100% {
-    background: blue;
-  }
-}
-
 .section {
   margin-top: 26px;
   display: none;
@@ -190,8 +169,6 @@ body {
     width: 100%;
     line-height: 24px;
   }
-
-
 }
 
 .section-list {
