@@ -127,13 +127,13 @@ body {
       height: 44px;
       left: 4px;
       top: 4px;;
-      transition: transform 1s ease;
+      transition: transform .3s ease;
       overflow: hidden;
       border-radius: 50px;
     }
     &--active {
       &::before {
-        transform: rotate(45deg);
+        transform: rotate(135deg);
         transform-origin: center center;
       }
     }
