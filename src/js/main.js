@@ -19,7 +19,6 @@ if ('serviceWorker' in navigator) {
 const caseList = document.querySelector('.case-list');
 
 caseList.addEventListener('click', (e) => {
-  const button = e.target.id;
   e.target.parentNode.classList.toggle('case--active');
   e.target.classList.toggle('case__button--active');
 });
