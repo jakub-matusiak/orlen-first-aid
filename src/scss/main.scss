@@ -119,16 +119,28 @@ body {
     position: relative;
 
     &::before {
-      content: (url("../assets/img/plus-icon.svg"));
+      display: block;
+      background: url(../assets/img/plus-icon.svg);
+      content:'';
       position: absolute;
       width: 44px;
       height: 44px;
       left: 4px;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 4px;;
+      transition: transform .3s ease;
+      overflow: hidden;
+      border-radius: 50px;
+    }
+    &--active {
+      &::before {
+        transform: rotate(135deg);
+        transform-origin: center center;
+      }
     }
   }
 }
+
+
 
 @keyframes alarm {
   0% {
